@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/20/bds_favicon.png" />
+    <title>Beveragedatasolutions - Answergen</title>
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="css/style.css" rel="stylesheet">-->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <style>
+        #map {
+            height: 100%;
+        }
+
+        .landing-page section p {
+            font-size: 14px;
+            line-height: 25px;
+        }
+    </style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N0MWVT3HPM"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-N0MWVT3HPM');
+	</script>
+</head>
+<body id="page-top" class="answergen landing-page">
+    <div class="navbar-wrapper bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded-0 d-none d-md-flex top-strip">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="mailto:info@beveragedatasolutions.com">
+                            <span class="fa fa-envelope"></span>&#160;info@beveragedatasolutions.com
+                        </a>
+                    </li>
+                </ul>   
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="LoginModalOpen();">Login Portal</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav id="main-header" class="navbar navbar-primary bg-white navbar-fixed-top navbar-expand-md rounded-0" role="navigation" data-height-loaded="true">
+            <div class="container et_menu_container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/20/bds_transparent.png" width="150" alt="beverage data solutions" id="logo" data-height-percentage="54">
+                </a>
+                <div class="navbar-header page-scroll">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item"><a class="nav-link page-scroll" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown1">Suppliers</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item page-scroll" href="index.html#datacollection">Data Collection</a>
+                                <a class="dropdown-item page-scroll" href="index.html#supplierAnlytcs">Supplier Analytics</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown2">Distributors</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item page-scroll" href="index.html#depletionReport">Depletion Reporting</a>
+                                <a class="dropdown-item page-scroll" href="index.html#distributorAnalysis">Distributor Analysis</a>
+                                <a class="dropdown-item page-scroll" href="index.html#bdnReporting">BDN Reporting</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="#page-top">Answergen</a></li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="index.html#contact">Contact Us</a></li>
+                        <li class="ml-md-4 d-none" id="searchboxitem">
+                            <div class="search-button">
+                                <a class="nav-link search-toggle" id="search-button" data-selector="#navbar">
+                                </a>
+                            </div>
+                            <div class="searchdiv">
+                                <form action="http://beveragedatasolutions.com/" class="search-box" role="search" method="get">
+                                    <input type="search" class="text search-input" placeholder="Type here to search..." />
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-nav ml-auto d-block d-md-none">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#cussupportmodal">Customer Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#loginModal">Login Portal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div id="inSlider" class="carousel slide" data-ride="carousel" data-interval="10000">
+        <ol class="carousel-indicators d-none">
+            <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="carousel-caption">
+                    <img src="img/20/answergen_logo_new.png" width="420" class="answergen-img" />
+                </div>
+                <!-- Set background for slide in css -->
+                <div class="header-back one"></div>
+            </div>
+        </div>
+        <a class="carousel-control-prev d-none" href="#inSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next d-none" href="#inSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <section>
+        <div class="container">
+            <div class="row card-body">
+                <div class="col-md-6 col-xs-12 form-group wow fadeInRightBig mb-4 order-last text-md-right text-center">
+                    <img src="img/20/bds_10.jpg" class="img-fluid" alt="Data Collection" />
+                </div>
+                <div class="col-md-6 col-xs-12 wow fadeInLeftBig">
+                    <h3 class="card-title">Business Intelligence. Simplified.</h3>
+                    <p>
+                        A Self-Service B.I. tool that is accessible anywhere, and is easy
+                        to deploy and use. Beverage Data Services will enable the
+                        typical business user to create dashboards, analytic drill downs
+                        and reports without programming or technical experience.
+                        Answergen can be used by anyone in the organization that can use
+                        internet and basic office applications. We have designed it from
+                        the business point of view. Here is the test: If other products
+                        claim to be so easy, why do they charge so much for training?
+                        Why is so much training necessary? When was the last time you
+                        needed training to use your smart phone? With Answergen, there
+                        is no extra training needed.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row card-body">
+                <div class="col-md-6 col-xs-12 form-group wow fadeInLeftBig mb-4">
+                    <div class="fluid-width-video-wrapper">
+                        <iframe id="fitvid444488" src="https://www.youtube.com/embed/c4xnZk0tgCM?wmode=opaque&amp;wmode=opaque" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-xs-12 wow fadeInRightBig">
+                    <h3 class="card-title">Answergen Reporting</h3>
+                    <p>
+                        Answergen allows your company to record and compare analytics and
+                        sales reports. The program also includes drilldown reporting,
+                        dashboards, and transaction level ad hoc reporting. Answergen
+                        allows your company to run at optimized efficiency.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary text-white">
+        <div class="container">
+            <div class="row">
+                <div class="card-body">
+                    <h2 class="text-center mb-md-5 mb-xs-3">Answergen Features</h2>
+                    <ul class="row list-unstyled">
+                        <li class="col-md-6 col-xs-12 form-group wow fadeInLeftBig">
+                            <div class="features-icon d-table-cell align-top">
+                                <i class="fa fa-tachometer text-white" aria-hidden="true"></i>
+                                <img src="img/20/BI-dashboards.png" class="d-none" />
+                            </div>
+                            <div class="features-content d-table-cell align-top">
+                                <h3 class="text-white">Dashboards</h3>
+                                <p class="text-white">Get a visual snapshot of your business and identify changes that improve performance, save money and increase revenue.</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-xs-12 form-group wow fadeInRightBig">
+                            <div class="features-icon d-table-cell align-top">
+                                <i class="fa fa-bar-chart text-white" aria-hidden="true"></i>
+                                <img src="img/20/business-analytics.png" class="d-none" />
+                            </div>
+                            <div class="features-content d-table-cell align-top">
+                                <h3 class="text-white">Analytics</h3>
+                                <p class="text-white">Slice and dice your data to gain meaningful insight into your business.</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-xs-12 form-group wow fadeInLeftBig">
+                            <div class="features-icon thumbnil d-table-cell">
+                                <i class="fa fa-sort-amount-asc text-white" aria-hidden="true"></i>
+                                <img src="img/20/drill-downs.png" class="d-none" />
+                            </div>
+                            <div class="features-content d-table-cell align-top">
+                                <h3 class="text-white">Drilldowns</h3>
+                                <p class="text-white">
+                                    Drill down through your business structures in any
+                                    direction necessary to gain understanding of business
+                                    performance.
+                                </p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-xs-12 form-group wow fadeInRightBig">
+                            <div class="features-icon thumbnil d-table-cell">
+                                <i class="fa fa-mobile text-white" aria-hidden="true"></i>
+                                <img src="img/20/mobile-data.png" class="d-none" />
+                            </div>
+                            <div class="features-content d-table-cell text-white align-top">
+                                <h3 class="text-white">Mobile Data</h3>
+                                <p class="text-white">You have access to your information anywhere you have a browser. Computer, tablet or phone, you are connected.</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-xs-12 form-group wow fadeInLeftBig">
+                            <div class="features-icon thumbnil d-table-cell">
+                                <i class="fa fa-shield text-white" aria-hidden="true"></i>
+                                <img src="img/20/business-intelligence-security.png" class="d-none" />
+                            </div>
+                            <div class="features-content d-table-cell align-top">
+                                <h3 class="text-white">Security</h3>
+                                <p class="text-white">Stop unauthorized access and provide access to necessary data while limiting access to sensitive information.</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-xs-12 form-group wow fadeInRightBig">
+                            <div class="features-icon thumbnil d-table-cell">
+                                <i class="fa fa-map-marker text-white" aria-hidden="true"></i>
+                                <img src="img/20/BI-geocharts.png" class="d-none" />
+                            </div>
+                            <div class="features-content d-table-cell align-top">
+                                <h3 class="text-white">GeoCharts</h3>
+                                <p class="text-white">Analyze your data geographically with our interactive heat maps.</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-xs-12 form-group wow fadeInLeftBig">
+                            <div class="features-icon thumbnil d-table-cell">
+                                <i class="fa fa-share-square-o text-white" aria-hidden="true"></i>
+                                <img src="img/20/detail-reporting.png" class="d-none" />
+                            </div>
+                            <div class="features-content d-table-cell align-top">
+                                <h3 class="text-white">Detail Reporting</h3>
+                                <p class="text-white">Provide Business Users with the ability to produce reports without being limited to a predefined structure and without having to submit a request to the technology group.</p>
+                            </div>
+                        </li>
+                        <li class="col-md-6 col-xs-12 form-group wow fadeInRightBig">
+                            <div class="features-icon thumbnil d-table-cell">
+                                <i class="fa fa-filter text-white" aria-hidden="true"></i>
+                                <img src="img/20/unlimited-kbis-and-measures.png" class="d-none" />
+                            </div>
+                            <div class="features-content d-table-cell align-top">
+                                <h3 class="text-white">Unlimited KBI's and Measures</h3>
+                                <p class="text-white">Determine what factors impact your business by identifying and analyzing an unlimited number of key business indicators and key performance indicators.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="sticky-footer" class="py-2 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; 2020 Beverage Data Solutions</small>
+        </div>
+    </footer>
+
+    <!--top scroll btn-->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <div class="modal" id="cussupportmodal" tabindex="-1" role="dialog" aria-labelledby="cussupportlable" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="cussupportlable">Customer Support</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="mb-3">Contact Information: </h4>
+                    <p class="mb-0"><label>Email:</label> <span class="font-bold">help@beveragedatasolutions.com</span></p>
+                    <p><label>Telephone:</label> <span class="font-bold">(239) 908-6705</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h3>Data Collection Status Report</h3>
+                        <p>Beta version of our Data Collection Status Reporting system will be updated real time as we are processing your data.</p>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form action="https://answergen.com/Data_Collection/Login.aspx" onsubmit="form_close_Dc();">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="user_login_dc" value="LogincredEmalid" placeholder="User Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="user_pass_dc" placeholder="Password" required>
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script type="text/javascript">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "7a639e7562ef8919d88267009931631377abfefc0edc2e70979679531003f031", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/inspinia.js"></script>
+    <!--<script src="js/custom.js"></script>-->
+    <!-- Custom and plugin javascript -->
+    <!--<script src="js/inspinia.js"></script>-->
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="js/plugins/wow/wow.min.js"></script>
+
+    <script>
+        // Activate WOW.js plugin for animation on scrol
+        new WOW().init();
+    </script>
+</body>
+</html>

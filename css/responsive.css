@@ -1,0 +1,206 @@
+﻿@media (min-width: 576px) {
+    .modal#LoginModal .modal-dialog {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 568px) {
+    .answergen.landing-page .carousel-item:first-child .carousel-caption img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .bi-logo {
+        margin: 0 auto;
+    }
+
+    .landing-page section p, .landing-page section li {
+        color: #333;
+        font-size: 13px;
+    }
+
+    section h3, article h3 {
+        font-size: 15px;
+    }
+
+    section h2, article h2 {
+        font-size: 20px;
+    }
+
+    .navbar-fixed-top {
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .landing-page .nav.navbar-right {
+        flex-direction: column;
+    }
+
+    .landing-page .gray-section {
+        margin-top: 0px;
+    }
+
+    .landing-page .carousel-item:first-child .carousel-caption {
+        text-align: center;
+    }
+
+    .bi-logo {
+        margin-bottom: 15px;
+    }
+
+    .landing-page .carousel {
+        height: 470px;
+        overflow: hidden;
+        margin: 80px 0 0;
+    }
+
+    .answergen.landing-page .carousel {
+        margin: 70px 0 0;
+    }
+
+        .answergen.landing-page .carousel, .answergen.landing-page .carousel .header-back {
+            height: 350px;
+        }
+
+    .landing-page .navbar-wrapper .navbar {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .bi-logo {
+        margin: 0 auto;
+        position: relative;
+        top: 28px;
+    }
+
+    section h3, article h3 {
+        font-size: 18px;
+    }
+
+    .blog h2 {
+        font-size: 25px;
+    }
+
+    .landing-page section p, .landing-page section li {
+        color: #333;
+        font-size: 14px;
+    }
+
+    .navbar-fixed-top {
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .landing-page .top-strip .navbar-nav {
+        flex-direction: row;
+    }
+
+    .landing-page .carousel-indicators {
+        padding-right: 60px;
+    }
+
+    .landing-page .carousel-item:first-child .carousel-caption {
+        text-align: left;
+    }
+
+    .landing-page .carousel {
+        overflow: hidden;
+        margin: 100px 0 0;
+    }
+
+    .landing-page .navbar-wrapper .navbar.navbar-fixed-top {
+        top: 33px;
+        background-color: #fff !important;
+    }
+
+        .landing-page .navbar-wrapper .navbar.navbar-fixed-top.navbar-scroll {
+            top: 0px;
+        }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .landing-page .navbar.navbar-primary .nav li a {
+        padding: 5px 13px;
+        font-size: 12px;
+        font-weight: 600;
+    }
+
+        .landing-page .navbar.navbar-primary .nav li a.dropdown-toggle::after {
+            top: 12px;
+            right: 3px;
+        }
+}
+
+@media (max-width: 991px) {
+    .order-last {
+        -ms-flex-order: 0 !important;
+        order: 0 !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    section .img-fluid {
+        display: block;
+        margin: auto;
+    }
+
+    .landing-page section .container,
+    .landing-page .navbar-wrapper .container,
+    .navadjusttop {
+        max-width: 98%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+        .landing-page section .container .row {
+            margin: 0;
+            padding: 15px 0px;
+        }
+
+    .landing-page .carousel {
+        height: 420px;
+        overflow: hidden;
+        margin: 80px 0 0;
+    }
+
+    .landing-page .gray-section.pb-60, .landing-page .gray-section.ptb-60, section.ptb-60 {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .landing-page .carousel-item:first-child .carousel-caption h3 {
+        font-size: 14px;
+    }
+
+    .bi-logo {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1280px) {
+    .landing-page .gray-section {
+        margin-top: 60px;
+    }
+
+    .landing-page .carousel {
+        height: 470px;
+        overflow: hidden;
+        margin: 100px 0 0;
+    }
+
+    .landing-page .carousel-item:first-child .carousel-caption h3 {
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    .landing-page .carousel-item:first-child .carousel-caption h2 {
+        font-size: 46px;
+    }
+}

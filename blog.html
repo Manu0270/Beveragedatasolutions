@@ -1,0 +1,408 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/20/bds_favicon.png" />
+    <title>Beveragedatasolutions - Blog</title>
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="css/style.css" rel="stylesheet">-->
+    <link href="css/responsive.css" rel="stylesheet">
+    <style>
+        #map {
+            height: 100%;
+        }
+    </style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N0MWVT3HPM"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-N0MWVT3HPM');
+	</script>
+</head>
+<body id="page-top" class="blog landing-page no-skin-config">
+    <div class="navbar-wrapper bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded-0 d-none d-md-flex top-strip">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="mailto:info@beveragedatasolutions.com">
+                            <span class="fa fa-envelope"></span>&#160;info@beveragedatasolutions.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="LoginModalOpen();">Login Portal</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav id="main-header" class="navbar navbar-primary bg-white navbar-fixed-top navbar-expand-md rounded-0" role="navigation" data-height-loaded="true">
+            <div class="container et_menu_container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/20/bds_transparent.png" width="150" alt="beverage data solutions" id="logo" data-height-percentage="54">
+                </a>
+                <div class="navbar-header page-scroll">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item"><a class="nav-link page-scroll" href="index.html">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown1">Suppliers</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item page-scroll" href="index.html#datacollection">Data Collection</a>
+                                <a class="dropdown-item page-scroll" href="index.html#supplierAnlytcs">Supplier Analytics</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown2">Distributors</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item page-scroll" href="index.html#depletionReport">Depletion Reporting</a>
+                                <a class="dropdown-item page-scroll" href="index.html#distributorAnalysis">Distributor Analysis</a>
+                                <a class="dropdown-item page-scroll" href="index.html#bdnReporting">BDN Reporting</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="answergen.html">Answergen</a></li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="#page-top">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="index.html#contact">Contact Us</a></li>
+                        <li class="ml-md-4 d-none" id="searchboxitem">
+                            <div class="search-button">
+                                <a class="nav-link search-toggle" id="search-button" data-selector="#navbar">
+                                </a>
+                            </div>
+                            <div class="searchdiv">
+                                <form action="http://beveragedatasolutions.com/" class="search-box" role="search" method="get">
+                                    <input type="search" class="text search-input" placeholder="Type here to search..." />
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-nav ml-auto d-block d-md-none">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#cussupportmodal">Customer Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#loginModal">Login Portal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <section>
+        <div class="container navadjusttop">
+            <aside class="col-lg-4 col-sm-3 col-md-12 float-md-right">
+                <div class="card mb-3 d-none">
+                    <h3 class="card-header mb-3 mt-0">Join our Newsletter</h3>
+                    <form class="form-horizontal">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn-primary">Join Us</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <h3>Recent Posts</h3>
+                <div class="list-group bg-white mb-3">
+                    <a href="#blog1" class="list-group-item text-dark page-scroll link1 pb-0">
+                        <h6 class="list-group-item-heading">Why Beverage Suppliers Need Depletion Data</h6>
+                    </a>
+                    <a href="#blog2" class="list-group-item text-dark page-scroll link2 pb-0">
+                        <h6 class="list-group-item-heading">Beverage Data Solutions | File Processing for BDN</h6>
+                    </a>
+                    <a href="#blog3" class="list-group-item text-dark page-scroll link3 pb-0">
+                        <h6 class="list-group-item-heading">Beverage Data Network Data Collection and Submission Services</h6>
+                    </a>
+                    <a href="#blog4" class="list-group-item text-dark page-scroll link4">
+                        <h6 class="list-group-item-heading">How BI Software Can Make Your Beverage Company Better</h6>
+                    </a>
+                </div>
+
+                <div class="container d-none d-lg-block">
+                    <h3>Follow Us</h3>
+                    <div class="social">
+                        <a class="mr-2 d-none" href=""><i class="fa fa-facebook"></i></a>
+                        <a class="mr-2" href="https://twitter.com/beveragedata"><i class="fa fa-twitter"></i></a>
+                        <a class="mr-2" href="https://www.linkedin.com/company/beverage-data-solutions/"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://plus.google.com/+Beveragedatasolutions"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="col-lg-8 col-sm-9 col-md-12 float-md-left">
+                <article id="blog1" class="mb-md-5 mb-xs-3">
+                    <header class="mb-3">
+                        <h2 class="mb-1">
+                            Why Beverage Suppliers Need Depletion Data
+                        </h2>
+                        <div class="meta">
+                            Written by <span class="author">bdsadmin</span>
+                        </div>
+                    </header>
+                    <div class="entry-content">
+                        <img src="img/20/beverage-data-network.jpg" alt="image" class="img-fluid mb-2" />
+
+                        <h3>Beverage Suppliers Need Their Depletion Data</h3>
+                        <p>As an importer or supplier, you need to know how your product is selling at the Retail Account Level (RAD). However, since in most cases, your customer is the distributor in their network, how can you tell who is buying your product? The sales through the distributors are usually called depletions and without the ability to gather and analyze this information, you have very little insight to a major part of your business.</p>
+                        <p>Most Distributors produce depletion data from their ERP systems or a separate Vendor Depletion Reporting System. They will usually include sales by product line, item, size. Some will also provide inventory levels of your products and SKU’s.</p>
+
+                        <h3>Different Distributors, Different Formats</h3>
+                        <p>The good news is the information is available, but how will you collect and make sense out of it? The reports will come in from each distributor in their format with the own unique coding for item numbers, descriptions, pack sizes, etc. Some will be in bottles and some will be in cases.  Putting this information into a meaningful format and scrubbing the data is a time consuming job.  To add to the work, you may get this data in spreadsheets or PDF reports.</p>
+                        <p>Ignoring the need to understand this part of your business is not an option. Making it a job for the internal staff is one way to go. You can have your sales team trying to get this information and cut and paste it into spreadsheets or you can have them out driving your sales and building your brand. The solution depends on your desire to work on your core business or do part time data processing.</p>
+
+                        <h3>Finally, a Solution to Your Depletion Problems (Beverage Industry)</h3>
+                        <p>Our Depletion Management services will take this entire job off your hands and give you the data and reporting to understand your business. Because this is one of our core business functions, you will get your information very quickly since we have a team of people processing the data as soon as it is available.</p>
+                        <p>This will give you not only the data but the information you need. How are you doing compared to last month, last year? Are you getting the on premise sales you want? How many new Accounts were opened with your products? Are your promotions giving you the results you need?</p>
+                        <!--<a href="#" class="btn btn-primary">Read More <span class="glyphicon glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a>-->
+                    </div>
+                    <footer></footer>
+                </article>
+                <article id="blog2" class="mb-md-5 mb-xs-3">
+                    <header class="mb-3">
+                        <h2 class="mb-1">
+                            Beverage Data Solutions | File Processing for BDN
+                        </h2>
+                        <div class="meta">
+                            Written by <span class="author">bdsadmin</span>
+                        </div>
+                    </header>
+                    <div class="entry-content">
+                        <img src="img/20/bds_16.jpg" alt="image" class="img-fluid mb-2" />
+
+                        <h3>Beverage Data Solutions – Processing of BDN Files</h3>
+                        <p>
+                            Our Beverage Data Solutions provide several levels of service depending on the business model you prefer.
+                            Below are the services available.
+                        </p>
+
+                        <ul class="pl-3">
+                            <li>Collect the data on your behalf for processing</li>
+                            <li>
+                                Process the data – in all forms including excel, text files, pdf files to the designed output format.
+                            </li>
+                            <li>
+                                Process the data to a standard output so you can easily perform analysis across your business even when the data received is in various formats
+                            </li>
+                            <li>
+                                Convert the data to standard formats like cases or case equivalent based on your instructions
+                            </li>
+                            <li>Balance the data to ensure accuracy and format requirements</li>
+                            <li>Transmit the data to whomever you designate (i.e. BDN)</li>
+                            <li>Provide status information to you</li>
+                        </ul>
+
+                        <h3>BDN File Processing</h3>
+                        <p>
+                            If you are using Beverage Data Network (BDN) for your data collection, the data format requirements can be difficult to accomplish without technical resources. If you are not meeting these requirements it will cause delays processing your
+                            information, may reduce the data available to you and potentially increase your cost.
+                            We have partnered with BDN to process the data to their precise standards. Our standard level of service
+                            is to have the data transmitted to BDN within 48 hours of receiving the data file. In most cases, we will have
+                            the data processed in the first week after the close of the month. This will give you a much faster turnaround
+                            of the BDN data for your analysis. All this can be accomplished at a much lower cost than manually
+                            collecting the information and trying to format the data.
+                        </p>
+                    </div>
+                    <footer>
+                    </footer>
+                </article>
+
+                <article id="blog3" class="mb-md-5 mb-xs-3">
+                    <header class="mb-3">
+                        <h2 class="mb-1">
+                            Beverage Data Network Data Collection and Submission Services
+                        </h2>
+                        <div class="meta">
+                            Written by <span class="author">bdsadmin</span>
+                        </div>
+                    </header>
+                    <div class="entry-content">
+                        <img src="img/20/beverage-data-network-bdn.jpg" alt="image" class="img-fluid mb-2" />
+
+                        <h3>How We Help in the Beverage Data Network Data Process</h3>
+                        <p>We know the Beverage Data Network collection and submission process can be not only time consuming, but difficult to accomplish without the proper technical resources. This is where Beverage Data Solutions will step in to alleviate some of the workload. Below is a flow chart which describes how our services can assist your company in the data retrieval and submission process.</p>
+
+                        <h3>Need Help Getting Your Beverage Data Network (BDN) Data?</h3>
+                        <p>Many distributors within the beverage industry cannot support the format in which BDN requires the data to be in. In situations like this, you will be left unable to view your depletions and unable to get your RAD data. This may leave your company to run at much less than optimum capacity and possibly slow down business processes.</p>
+
+                        <h3>Beverage Data Solutions Will Collect Your Data for Beverage Data Network</h3>
+                        <p>The first step in the data retrieval process to be submitted to BDN is simply collecting the data from various distributors. This process can be done by Beverage Data Solutions for your company. We will collect the Beverage Data Network data from your distributors for you.</p>
+
+                        <h3>Processing Your Distributor Data for You</h3>
+                        <p>Sometimes, distributors will give their data in various formats including .XLS, .DOCX, or .PDF, making the process a bit more confusing. Once we collect your distributor data, we will the process it into a standardized format for you. We will also calculate cases to bottles to make sure that your reports remain consistent. This guarantees that you do not miss any information and allows you to remain informed of exactly what is going on with the sales of your products.</p>
+
+                        <h3>Beverage Data Network (BDN) Data Format</h3>
+                        <p>Beverage Data Solutions will convert your distributor data into the BDN format for you. This allows your information to be processed by BDN quickly and efficiently without any delays in the process.</p>
+
+                        <h3>Balance and Control</h3>
+                        <p>On top of all of the above services that Beverage Data Solutions offers, we will make sure to do it without any errors and we will confirm that it is in Beverage Data Network possession to be processed.</p>
+
+                        <h3>Optimize Your Business With Better Information</h3>
+                        <p>If you are in the wine and spirits or beverage industry, now is the time to truly optimize your company’s performance. With better, more accurate and consistent data, your company will be able to have the information you need at your finger tips and run your company more efficiently.</p>
+                    </div>
+                    <footer>
+                    </footer>
+                </article>
+
+                <article id="blog4" class="mb-md-5 mb-xs-3">
+                    <header class="mb-3">
+                        <h2 class="mb-1">
+                            How BI Software Can Make Your Beverage Company Better
+                        </h2>
+                        <div class="meta">
+                            Written by <span class="author">bdsadmin</span>
+                        </div>
+                    </header>
+                    <div class="entry-content">
+                        <img src="img/20/company_better_big.jpg" alt="image" class="img-fluid mb-2" />
+
+                        <p class="mb-3">Whether you are a beverage distributor or supplier, a business intelligence software can help you in more ways than one. If you are looking for a resource that can take your data, analyze it, then give you an in depth look on what is really going on with your company, then you are in the right place. Our BI software, Answergen offers a wide array of tools that lets you break down your company in multiple different ways so that you can track sales, depletion reports, distributors, and other options. Many companies use Nielsen Beverage Data Network (BDN) to submit and process their data which require specific requirements. We can help you collect the data to be submitted directly to BDN, format it for you, then analyze that data for your specific use.</p>
+
+                        <div class="mb-3">
+                            <h3>Maximize Your Beverage Sales</h3>
+                            <p>When your company gets larger, it can be more difficult to track sales, see what kind of people are buying your product, and where. These difficulties apply to most large companies in the beverage industry, but can go unnoticed for long periods of time. Knowing this kind of information can assist you in allocating your resources properly, to ensure optimum sales in the right locations. Every day that goes by and your company is not optimized, you can be risking an accumulation of sales. Lets put it this way, if you know where the majority of your sales are, you can proportionately allocate your marketing and advertising budget to that specific location. If you are splitting up your advertising budget evenly throughout all of your sales locations, you may be wasting time and resources doing so if that location is not the one that is primarily buying your wine or beer.</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <h3>BI Solutions for the Beverage Industry</h3>
+                            <p>Our BI solutions for the beverage industry not only optimize your sales, they save you time, energy and money. Selecting a specific person to handle all of your data collection, analysis and reporting as a side task seems like a great idea, right? Unfortunately this is likely wrong for multiple reasons. Is this employee collecting the data? When I say that, I mean, are they making 100% sure that every distributor is submitting their data in the correct format? If the answer is no, the Beverage Data Solutions might have a simple solution to your problem. Not only do we collect all of the data from your distributors in a timely, efficient manner, but we format it for you, just in case they don’t do it right. This alleviates the tasks from your hands and guarantees that it is being done right. Many companies in the wine and spirits industry often ignore their in-depth analytics,  or make it a lower priority because they feel that it does not hurt the company to wait on their decision to use analytical tools. This is an inaccurate assumption, because everyday that you are not meeting your maximum amount of sales, you are in fact hurting your company.</p>
+                        </div>
+
+                        <div class="mb-3">
+                            <h3>Beverage Industry BI and Data Tools</h3>
+                            <p>Our data tool offers multiple features so that you can visualize sales comparisons on multiple levels. You can witness exactly what is going on with your company from a single, easy-to-use interface that accessible from any platform, anywhere. The key features that the program offers are business dashboards, drill downs, security, detail reporting, analytics, mobile data, geocharts, unlimited KBI’s and measures.</p>
+                        </div>
+                    </div>
+                </article>
+
+                <nav class="d-none">
+                    <ul class="pagination">
+                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="d-block d-lg-none mb-3 mt-5">
+                <h3 class="text-center">Follow Us</h3>
+                <div class="social text-center m-auto">
+                    <a class="mr-2 d-none" href=""><i class="fa fa-facebook"></i></a>
+                    <a class="mr-2" href="https://twitter.com/beveragedata"><i class="fa fa-twitter"></i></a>
+                    <a class="mr-2" href="https://www.linkedin.com/company/beverage-data-solutions/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://plus.google.com/+Beveragedatasolutions"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="sticky-footer" class="col-md-12 float-md-left py-2 bg-dark text-white-50">
+        <div class="container text-center">
+            <small>Copyright &copy; 2020 Beverage Data Solutions</small>
+        </div>
+    </footer>
+
+    <!--top scroll btn-->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <div class="modal" id="cussupportmodal" tabindex="-1" role="dialog" aria-labelledby="cussupportlable" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="cussupportlable">Customer Support</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="mb-3">Contact Information: </h4>
+                    <p class="mb-0"><label>Email:</label> <span class="font-bold">help@beveragedatasolutions.com</span></p>
+                    <p><label>Telephone:</label> <span class="font-bold">(239) 908-6705</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h3>Data Collection Status Report</h3>
+                        <p>Beta version of our Data Collection Status Reporting system will be updated real time as we are processing your data.</p>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form action="https://answergen.com/Data_Collection/Login.aspx" onsubmit="form_close_Dc();">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="user_login_dc" value="LogincredEmalid" placeholder="User Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="user_pass_dc" placeholder="Password" required>
+                            </div>
+                            <button type="button" class="btn btn-info btn-block btn-round">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script type="text/javascript">var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "7a639e7562ef8919d88267009931631377abfefc0edc2e70979679531003f031", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");</script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/inspinia.js"></script>
+    <!--<script src="js/custom.js"></script>-->
+    <!-- Custom and plugin javascript -->
+    <!--<script src="js/inspinia.js"></script>-->
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="js/plugins/wow/wow.min.js"></script>
+
+    <script>
+        // Activate WOW.js plugin for animation on scrol
+        new WOW().init();
+    </script>
+</body>
+</html>

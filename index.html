@@ -1,0 +1,527 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/20/bds_favicon.png" />
+    <title>Beveragedatasolutions - Home</title>
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!--<link href="css/bootstrap.min.css" rel="stylesheet">-->
+    <!-- Animation CSS -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!--<link href="css/style.css" rel="stylesheet">-->
+    <link href="css/responsive.css" rel="stylesheet">
+
+    <style>
+        #map {
+            height: 100%;
+        }
+    </style>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-N0MWVT3HPM"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-N0MWVT3HPM');
+	</script>
+</head>
+<body id="page-top" class="landing-page no-skin-config">
+    <div class="navbar-wrapper bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary rounded-0 d-none d-md-flex top-strip">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="mailto:info@beveragedatasolutions.com">
+                            <span class="fa fa-envelope"></span>&#160;info@beveragedatasolutions.com
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" onclick="LoginModalOpen();">Login Portal</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <nav id="main-header" class="navbar navbar-primary bg-white navbar-fixed-top navbar-expand-md rounded-0" role="navigation" data-height-loaded="true">
+            <div class="container et_menu_container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/20/bds_transparent.png" width="150" alt="beverage data solutions" id="logo" data-height-percentage="54">
+                </a>
+                <div class="navbar-header page-scroll">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="nav-item"><a class="nav-link page-scroll" href="#page-top">Home</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown1">Suppliers</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                                <a class="dropdown-item page-scroll" href="#datacollection">Data Collection</a>
+                                <a class="dropdown-item page-scroll" href="#supplierAnlytcs">Supplier Analytics</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown2">Distributors</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                                <a class="dropdown-item page-scroll" href="#depletionReport">Depletion Reporting</a>
+                                <a class="dropdown-item page-scroll" href="#distributorAnalysis">Distributor Analysis</a>
+                                <a class="dropdown-item page-scroll" href="#bdnReporting">BDN Reporting</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="answergen.html">Answergen</a></li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link page-scroll" href="#contact">Contact Us</a></li>
+                        <li class="ml-md-4 d-none" id="searchboxitem">
+                            <div class="search-button">
+                                <a class="nav-link search-toggle" id="search-button" data-selector="#navbar">
+                                </a>
+                            </div>
+                            <div class="searchdiv">
+                                <form action="http://beveragedatasolutions.com/" class="search-box" role="search" method="get">
+                                    <input type="search" class="text search-input" placeholder="Type here to search..." />
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-nav ml-auto d-block d-md-none">
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="modal" data-target="#cussupportmodal">Customer Support</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" onclick="LoginModalOpen();">Login Portal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div id="inSlider" class="carousel slide" data-ride="carousel" data-interval="10000">
+        <ol class="carousel-indicators">
+            <li data-target="#inSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#inSlider" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <div class="carousel-caption">
+                    <div class="row">
+                        <div class="col-md-6 col-xs-12 text-sm-center wow fadeInLeftBig">
+                            <div class="bi-logo">
+                                <img src="img/20/bds_transparent_whiteletters.png" class="lazyload img-fluid" alt="bds transparent whiteletters" />
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-xs-12 wow fadeInRightBig">
+                            <h2 class="font-weight-light mt-sm-3 mt-0 mb-3">Beverage Industry Data Handling</h2>
+                            <h3>Beverage Data Services offers a full service reporting management system. We will collect, analyze, and submit your data and make it more easily accessible to you.</h3>
+                        </div>
+                    </div>
+                </div>
+                <!-- Set background for slide in css -->
+                <div class="header-back one"></div>
+
+            </div>
+            <div class="carousel-item">
+                <div class="carousel-caption blank">
+                    <h1 class="text-dark font-weight-light mb-3">Reporting Service</h1>
+                    <p><a class="btn btn-lg btn-primary page-scroll" href="#bdnReporting" role="button">Learn More</a></p>
+                </div>
+                <!-- Set background for slide in css -->
+                <div class="header-back two"></div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#inSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#inSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <section id="features" class="services gray-section ptb-60 m-0">
+        <div class="container text-center">
+            <div class="row justify-content-around">
+                <div class="col-sm-3">
+                    <img src="img/grey.gif" data-original="img/data-solutions-for-wine-industry.png" class="lazyload img-fluid" alt="data-solutions-for-wine-industry" title="data-solutions-for-wine-industry" />
+                    <h2 class="card-title">Distributor Solutions</h2>
+                    <p>We provide a wide variety of services to distributors in order to enhance their data reporting experience.</p>
+
+                </div>
+                <div class="col-sm-3">
+                    <img src="img/grey.gif" data-original="img/beverage-data-solutions1.png" class="lazyload img-fluid" alt="beverage-data-solutions" title="beverage-data-solutions" />
+                    <h2 class="card-title">Advanced Reporting and Analytics</h2>
+                    <p>We provide companies with a business intelligence tool that assists in organizing and accessing useful data.</p>
+
+                </div>
+                <div class="col-sm-3">
+                    <img src="img/grey.gif" data-original="img/liquor-industry-data-analyze.png" class="lazyload img-fluid" alt="liquor-industry-data-analyze" title="liquor-industry-data-analyze" />
+                    <h2 class="card-title">Supplier Solutions</h2>
+                    <p>Beverage Data Services works with suppliers to collect, organize and optimize their various data and submit it to BDN.</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container suppliers-img wow fadeInDown ptb-60">
+        <img src="img/grey.gif" data-original="img/20/infograph_redo_png.png" class="lazyload img-fluid" alt="Infographic" />
+    </section>
+
+    <section id="datacollection" class="gray-section pb-60">
+        <div class="container">
+            <div class="row card-body">
+                <div class="col-md-12 col-xs-12 form-group text-center">
+                    <div class="navy-line"></div>
+                    <h2 class="card-title font-weight-light">Data Collection</h2>
+                    <p>Beverage Data Solutions can work with your distributors to collect the data and synthesize the data coming in many styles and formats to useful, timely information.</p>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-12 form-group wow fadeInLeftBig mb-4">
+                    <img src="img/grey.gif" data-original="img/20/data-collection.jpg" class="lazyload img-fluid" alt="Data Collection" />
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-12 wow fadeInRightBig">
+                    <h3 class="card-title">Our services include:</h3>
+                    <ul class="pl-3">
+                        <li class="border-0">Working with your distributors to get the most data possible in the shortest amount of time. We will send them automated reminders and contact them to keep the data coming to you on a timely basis.</li>
+                        <li class="border-0">Process all the data in any format including excel, text files, PDF files.</li>
+                        <li class="border-0">Collect the data on your behalf for processing</li>
+                        <li class="border-0">Process the data to a standard output so you can easily perform analysis across your business even when the data received is in various formats</li>
+                        <li class="border-0">Standardize the data to your business model for item numbers, item descriptions, pack sizes, bottles to cases, and case equivalents.</li>
+                        <li class="border-0">If desired, enhance your data with third party information like demographics, geographic coding, etc.</li>
+                        <li class="border-0">Provide you the data in a way that is information and you can use in your reporting system or use our advance reporting and analytics.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="supplierAnlytcs" class="wow fadeInDown">
+        <div class="container">
+            <div class="row card-body">
+                <div class="col-md-12 col-xs-12 form-group wow fadeInDown text-center">
+                    <div class="navy-line"></div>
+                    <h2 class="card-title font-weight-light">Supplier Reporting</h2>
+                    <p>You need to able to analyze your depletion, inventory and shipment data quickly and efficiently.</p>
+                </div>
+                <div class="col-md-12 col-xs-12 form-group mb-3 wow fadeInDown">
+                    <img src="img/grey.gif" data-original="img/20/banner12.jpg" class="lazyload img-fluid" alt="Data Collection" />
+                </div>
+                <div class="col-md-12 col-xs-12 wow fadeInDown">
+                    <p>Beverage Data Solutions can take all of data, from all sources and make it useful, actionable information.  We will give you the ability to summarize your data by any combination of business values or drill down to any level to get the detail data when you need it.  You will be able to look at how a product line is doing, drill down through your sales organization and further to the retail account results.</p>
+                    <p>You will have Dashboards to give you a visual view of your business and analytics reports to drill down through your business by product, brand, item, geography, sales organization, sales channel or any other combination you have from your systems.  Any number of metrics will be available to you including depletions, inventory amounts, shipments in dollars and cases, 9L cases and case equivalents.  You will be able to examine your information for any time period or compare time period results; like current month, year to date, current month/prior year same month, current year YTD/prior year YTD, etc.  Geographic analysis is available in addition to What If Scenario Analysis.</p>
+                    <p>You will have the benefit of our suite of industry standard reports but we will create or customize any of the reports to meet your needs.  The product also has an easy to use, powerful ad hoc reporting capability to let you get the information you need quickly.  You can always export your report or data to PDF, Word or Excel. We have used technology to deliver on the promise of business friendly applications.  Your information will be available from anywhere you have an internet connection – at the office, at home, travelling.  Access our easy to use interface from your desktop, tablet or smartphone.  Securely give access to the right information to the right people in the organization automatically and accelerate your business with timely, consistent information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depletionReport" class="gray-section pb-60">
+        <div class="container">
+            <div class="row card-body">
+                <div class="col-md-12 col-xs-12 text-center mb-3 wow fadeInDown">
+                    <div class="navy-line"></div>
+                    <h2 class="card-title mb-3 font-weight-light">Depletion Reporting – Automate to Save Time And Money</h2>
+                    <p>Are you spending time and energy producing your monthly depletion data for your vendors and suppliers? Many distributors find this time consuming effort stressful on the organization and, sometimes damaging to supplier and vendor relations.</p>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-12 form-group wow fadeInRightBig order-last text-md-right text-center">
+                    <img src="img/grey.gif" data-original="img/20/bds_8.jpg" class="lazyload img-fluid" alt="Depletion Report" />
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-12 form-group wow fadeInLeftBig">
+                    <h3>How We Can Help With Your Depletion Reports</h3>
+                    <ul class="pl-3">
+                        <li class="mb-3">
+                            We can automate the depletion reporting and automatically email the reports to the people you designate.
+                            Our easy to use interface will let you indicate who gets the reports and in whatever format you would like to provide.
+                            If you are producing PDF reports today, many of your suppliers would appreciate Excel reports to help with their analysis.
+                        </li>
+                        <li class="mb-3">
+                            We can provide a Vendor portal so your vendors and suppliers can login to a secure site and access the information you would like to provide.
+                            You can provide as much information as you would like, in the formats you would like to provide.
+                            If it will help, we can provide some ad hoc capabilities to reduce those special requests for data your staff receives.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="vendar" class="ptb-60 m-0">
+        <div class="container">
+            <div class="row card-body">
+
+                <div class="col-lg-6 col-sm-6 col-md-12 form-group wow fadeInLeftBig">
+                    <div class="vendar-tab">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Vendor Depletion Reporting</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link font-weight-bold" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Detailed Depletion Reports</a>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <p>Depletion reporting services that are more efficient than ever before. You can easily access your depletion reports and compare sales and retail account data (RAD) through our state of the art program, Answergen.</p>
+                            </div>
+                            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <p>As a beverage supplier, you should know how many sales you are receiving from you various distributors. Easily access and compare various wine depletion data including: shipment data, retail account data (RAD), and inventory data. These depletion reports can assist you in allocating your promotion and advertising activity to increase sales.</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-12 form-group wow fadeInRightBig">
+                    <img src="img/grey.gif" data-original="img/bds_9.jpg" class="lazyload img-fluid" alt="Depletion Report" />
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="distributorAnalysis" class="gray-section pb-60">
+        <div class="container">
+            <div class="row card-body">
+                <div class="col-md-12 col-xs-12 mb-3">
+                    <div class="navy-line"></div>
+                    <h2 class="card-title mb-3 text-center font-weight-light">Distributor Analysis</h2>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-12 form-group wow fadeInLeftBig">
+                    <img src="img/grey.gif" data-original="img/20/monthly_report.jpg" class="lazyload img-fluid" alt="Depletion Report" />
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-12 form-group wow fadeInRightBig">
+                    <h3 class="card-title m-b-2">You capture a lot of data, but can you take advantage the investment of time and expense to have actionable information?</h3>
+                    <p class="mb-3">
+                        If you data is trapped in your ERP system you are not able to take advantage of the information that can help accelerate your business.
+                        Whether it is inventory or sales information, for the executive or the salesperson you need to be able to leverage this valuable asset.
+                        Many companies believe the standard reports they get from their ERP are giving them the ability to analyze their business.
+                        However, ERP systems typically create silo’s of information that do not give the complete picture.
+                        Further, how do you get the information out of the system? Crystal Reports, excel files are static single use reports that usually lead to more information requests than answers.
+                    </p>
+                    <h3 class="card-title m-b-2">Answergen for Distributor Analytics</h3>
+                    <p>Our business intelligence product Answergen will give you immediate access to the information you have in your ERP and other systems and data stores you may have. You will get all the advanced forms of analysis like Dashboards, Drill downs, detail reporting and geographic reporting in an easy to use web based application. At the office, on the road, PC or mobile device, you will have access to your information.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bdnReporting" class="wow fadeInDownBig pb-60">
+        <div class="container">
+            <div class="row card-body">
+                <div class="col-md-12 col-xs-12 mb-3">
+                    <div class="navy-line"></div>
+                    <h2 class="card-title mb-3 text-center font-weight-light">BDN Reporting</h2>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-12 wow fadeInLeftBig m-b-sm">
+                    <h3 class="card-title">Suppliers asking you to send Data to BDN?</h3>
+                    <ul class="pl-3">
+                        <li class="mb-3">
+                            Many suppliers use BDN (Beverage Data Network) to consolidate their depletion, inventory and RAD data from distributors.
+                            The BDN requirements are complicated and difficult to accomplish. We can do it for you and your Suppliers and Vendors will thank you.
+                        </li>
+                        <li class="mb-2">
+                            If you are already sending data to BDN and sending it as a spreadsheet, you are not meeting the requirements. BDN has to manually process the data, which results in delays and the Retail Account data will not be processed at all.
+                            Your Suppliers may be getting some of the data, but it is not complete and not as timely as they will get from other Distributors fully meeting the BDN standards.
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-12 wow fadeInRightBig mb-3">
+                    <h3 class="card-title">How we can help</h3>
+                    <ul class="pl-3">
+                        <li class="mb-3">We have the technology in place to meet the BDN standards. We can interface directly with your system to get the data necessary or take your depletion data and put it in the right format. We will do error checking and balancing to avoid the delays if the errors are not identified until transmitted to BDN. We will transmit the data to BDN and interface with them if there are any issues.</li>
+                        <li class="mb-3">We charge a low monthly fee for this service with no upfront cost or setup fees. Contact us today to see how other distributors are meeting the needs of their Suppliers by using our service.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whattodo gray-section rounded-0 ptb-60">
+        <div class="container">
+            <div class="row card-body">
+                <div class="d-lg-none d-block mb-3 col-12 text-center">
+                    <div class="navy-line"></div>
+                    <h2 class="card-title mb-3 text-center font-weight-light">What We Can Do For You</h2>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-12 wow fadeInRightBig mb-3 order-last text-md-right text-center">
+                    <img src="img/grey.gif" data-original="img/20/whatcando.jpg" class="lazyload img-fluid" alt="whatcando" />
+                </div>
+                <div class="col-lg-6 col-sm-6 col-md-12 wow fadeInLeft mb-3">
+                    <h3 class="card-title mb-3 d-lg-block d-none">What We Can Do For You</h3>
+                    <ul class="pl-3">
+                        <li class="mb-3">Collect your depletion and inventory data</li>
+                        <li class="mb-3">Process your data to a standard format to support your analysis</li>
+                        <li class="mb-3">Interface with third party services like BDN or VIP</li>
+                        <li class="m-b-xs">Industry specific internet and mobile reporting and analysis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="wow fadeInDownBig pb-60">
+        <div class="container">
+            <div class="row card-body">
+                <div class="col-md-12 features-block col-xs-12">
+                    <h2 class="card-title mb-3 text-center font-weight-light">Beverage Data Solutions For The Alcohol Beverage Industry</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="gray-section contact m-0">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-lg-12 text-center">
+                    <div class="navy-line"></div>
+                    <h1>Contact Us</h1>
+                    <p class="d-none">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod.</p>
+                </div>
+            </div>
+            <div class="row mb-4 justify-content-center">
+                <div class="col-lg-3 text-center">
+                    <address>
+                        <strong><span class="navy">Beverage Data Solutions</span></strong><br />
+                        1130 Creekside Pkwy, #110381<br />
+                        Naples FL 34108<br />
+                        <span title="Phone" class="fa fa-phone">&#160;:</span> (239) 908-6705
+                    </address>
+                </div>
+                <div class="col-lg-4 d-none">
+                    <p class="text-color">
+                        Consectetur adipisicing elit. Aut eaque, totam corporis laboriosam veritatis quis ad perspiciatis, totam corporis laboriosam veritatis, consectetur adipisicing elit quos non quis ad perspiciatis, totam corporis ea,
+                    </p>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <address>
+                        <strong><span class="navy">Sengen Software Private Limited</span></strong><br />
+                        SP-7A, 2nd Floor<br />
+                        201 Room No. South Phase<br />
+                        Guindy Industrial Estate, Guindy<br />
+                        Chennai, Tamil Nadu 600032.
+                    </address>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <a href="mailto:info@beveragedatasolutions.com" class="btn btn-primary">Send us mail</a>
+                    <p class="mt-2">
+                        Or follow us on social platform
+                    </p>
+                    <ul class="list-inline social-icon">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/beveragedata"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li class="list-inline-item d-none">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.linkedin.com/company/beverage-data-solutions/"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 text-center mt-4 mb-4">
+                    <p class="font-bold">&copy; 2020 Beverage Data Solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--top scroll btn-->
+    <a href="javascript:" id="return-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <div class="modal" id="cussupportmodal" tabindex="-1" role="dialog" aria-labelledby="cussupportlable" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title" id="cussupportlable">Customer Support</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="mb-3">Contact Information: </h4>
+                    <p class="mb-0"><label>Email:</label> <span class="font-bold">help@beveragedatasolutions.com</span></p>
+                    <p><label>Telephone:</label> <span class="font-bold">(239) 908-6705</span></p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0 pb-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-title text-center">
+                        <h3>Data Collection Status Report</h3>
+                        <p>Beta version of our Data Collection Status Reporting system will be updated real time as we are processing your data.</p>
+                    </div>
+                    <div class="d-flex flex-column text-center">
+                        <form action="https://answergen.com/Data_Collection/Login.aspx" onsubmit="form_close_Dc();">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="user_login_dc" value="LogincredEmalid" placeholder="User Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="user_pass_dc" placeholder="Password" required>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-block btn-round">Login</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mainly scripts -->
+    <script type="text/javascript">
+        var $zoho = $zoho || {}; $zoho.salesiq = $zoho.salesiq || { widgetcode: "7a639e7562ef8919d88267009931631377abfefc0edc2e70979679531003f031", values: {}, ready: function () { } }; var d = document; s = d.createElement("script"); s.type = "text/javascript"; s.id = "zsiqscript"; s.defer = true; s.src = "https://salesiq.zoho.com/widget"; t = d.getElementsByTagName("script")[0]; t.parentNode.insertBefore(s, t); d.write("<div id='zsiqwidget'></div>");
+    </script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="js/inspinia.js"></script>
+    <!--<script src="js/custom.js"></script>-->
+    <!-- Custom and plugin javascript -->
+    <!--<script src="js/inspinia.js"></script>-->
+    <script src="js/plugins/pace/pace.min.js"></script>
+    <script src="js/plugins/wow/wow.min.js"></script>
+    <script src="js/jquery.lazyload.min.js"></script>
+    <script>
+        // Activate WOW.js plugin for animation on scrol
+        new WOW().init();
+        
+    </script>
+    <script>
+        $("img.lazyload").lazyload({
+            effect: "fadeIn"
+        });
+    </script>
+</body>
+</html>
